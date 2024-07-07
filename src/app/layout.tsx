@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import SectionContainer from "@/components/SectionContainer";
 import LayoutWrapper from "@/components/LayoutWrapper";
 
@@ -20,13 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SectionContainer>
+        
           <LayoutWrapper>
           {children}
           </LayoutWrapper>
 
           
-        </SectionContainer>
       </body>
     </html>
   );

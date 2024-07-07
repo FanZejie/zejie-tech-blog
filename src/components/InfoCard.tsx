@@ -10,9 +10,8 @@ const InfoCard = () => {
       </div>
 
       <div className="min-w-1/2 ml-10 my-auto  flex flex-col text-lg  text-gray-600 dark:text-gray-400">
-      <BasicInfo />
-        <BlogLinks/>
-       
+        <BasicInfo />
+        <BlogLinks />
       </div>
     </div>
   );

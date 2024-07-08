@@ -1,4 +1,4 @@
-
+import BlogCard from "./BlogCard";
 const LatestBlogCard = () => {
   return (
     <div className="w-full divide-y divide-gray-200 dark:divide-gray-700">
@@ -7,11 +7,16 @@ const LatestBlogCard = () => {
           Latest Blog
         </h1>
         <p className="!mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">
-          My desire to practice my skills and share my acquired knowledge fuels
-          my endeavors.
+        Sharing my learning journey and solutions to development challenges.
         </p>
       </div>
-      <div className="popular-tags grid grid-cols-3 gap-4 py-6 xl:grid-cols-6"></div>
+      <div className="w-full">
+        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+          <li className="py-6"><BlogCard/></li>
+          <li className="py-6"><BlogCard/></li>
+        </ul>
+        
+      </div>
     </div>
   );
 };

@@ -1,16 +1,28 @@
 import React from "/public/icons/react.svg";
+import Vue from "/public/icons/vue.svg";
 import Javascript from "/public/icons/javascript.svg";
 import Typescript from "/public/icons/typescript.svg";
 import NextJS from "/public/icons/nextjs.svg";
+import NestJS from "/public/icons/nestjs.svg";
+import Java from "/public/icons/java.svg";
+import Tailwindcss from "/public/icons/tailwindcss.svg";
 import Mongodb from "/public/icons/mongodb.svg";
+import Mysql from "/public/icons/mysql.svg";
 import Docker from "/public/icons/docker.svg";
+import AWS from "/public/icons/aws.svg";
 export const BrandIconsMap = {
     React,
+    Vue,
     Javascript,
     Typescript,
     NextJS,
+    Tailwindcss,
+    NestJS,
+    Java,
     Mongodb,
-    Docker
+    Mysql,
+    Docker,
+    AWS
   };
 
   export type BrandIconType = keyof typeof BrandIconsMap;

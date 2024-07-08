@@ -26,6 +26,8 @@ model Post {
 
 model Tag {
   id        String   @id @default(cuid())
+  slug      String   @unique
+  iconType  String
   name      String   @unique
   posts     Post[]
   @@index(name)

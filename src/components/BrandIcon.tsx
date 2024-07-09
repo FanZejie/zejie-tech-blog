@@ -10,6 +10,7 @@ import Mongodb from "/public/icons/mongodb.svg";
 import Mysql from "/public/icons/mysql.svg";
 import Docker from "/public/icons/docker.svg";
 import AWS from "/public/icons/aws.svg";
+import Prisma from "/public/icons/prisma.svg";
 export const BrandIconsMap = {
     React,
     Vue,
@@ -22,7 +23,8 @@ export const BrandIconsMap = {
     Mongodb,
     Mysql,
     Docker,
-    AWS
+    AWS,
+    Prisma
   };
 
   export type BrandIconType = keyof typeof BrandIconsMap;

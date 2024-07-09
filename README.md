@@ -11,8 +11,26 @@ prisma
 
 sqlite
 
+## use seed to init database
 
-use svgr to import svg files
+添加seed.ts
+修改package.json
+```
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+```
+然后需要确保ts-node环境
+```
+npm i ts-node -D
+```
+运行以生成假数据
+```
+npx prisma db seed
+```
+
+
+## use svgr to import svg files
 
 install @svgr/webpack
 ```

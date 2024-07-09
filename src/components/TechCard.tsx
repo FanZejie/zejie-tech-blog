@@ -17,7 +17,7 @@ const TechCard = () => {
       {map(popularTags, (popularTag) => {
           const { slug, iconType, href, title } = popularTag;
 
-          const className = `${slug} flex w-[128px]  space-x-2 rounded-lg p-3`;
+          const className = `${slug} flex w-[200px]  space-x-2 rounded-lg p-3`;
 
           return (
             <Link key={slug} href={href} className={className}>

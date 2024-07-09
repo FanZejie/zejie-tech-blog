@@ -10,7 +10,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model Post {
   id        String   @id @default(cuid())
   title     String
@@ -19,16 +18,18 @@ model Post {
   published Boolean  @default(true)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  tags  Tag[]
+  tags      Tag[]
 
   @@index(slug)
 }
 
 model Tag {
-  id        String   @id @default(cuid())
-  slug      String   @unique
-  iconType  String
-  name      String   @unique
-  posts     Post[]
-  @@index(name)
+  id       String @id @default(cuid())
+  slug     String @unique
+  iconType String
+  title    String @unique
+  sort     Int    @default(0)
+  posts    Post[]
+
+  @@index(title)
 }

@@ -5,9 +5,9 @@ import prisma from "@/lib/db";
 export async function getAllTags() {
     const tags = await prisma.tag.findMany();
     return tags.map(tag =>({
-        title: tag.name,
+        title: tag.title,
         slug: tag.slug,
-        href: `/tags/${tag.name}`,
+        href: `/tags/${tag.slug}`,
         iconType: tag.iconType as BrandIconType
     }))
 }

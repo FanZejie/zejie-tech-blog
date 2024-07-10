@@ -34,8 +34,8 @@ const popularTags: PopularTag[] = [
   {
     href: '/tags/nextjs',
     iconType: 'NextJS',
-    slug: 'nestjs',
-    title: 'NestJS',
+    slug: 'nextjs',
+    title: 'NextJS',
   },
   {
     href: '/tags/tailwindcss',

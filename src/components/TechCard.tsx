@@ -4,7 +4,7 @@ import BrandIcon from './BrandIcon';
 import popularTags from '@/data/popularTags';
 const TechCard = () => {
   return (
-    <div className="w-full divide-y divide-gray-200 dark:divide-gray-700">
+    <div className="w-full divide-y divide-gray-200 dark:divide-gray-700 ">
       <div className="space-y-2 py-6 md:space-y-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           Dev Skills
@@ -22,7 +22,7 @@ const TechCard = () => {
           return (
             <Link key={slug} href={href} className={className}>
               <BrandIcon type={iconType} className="h-6 w-6" />
-              <div className="my-auto text-black">{title}</div>
+              <div className="my-auto text-black dark:text-gray-400">{title}</div>
             </Link>
           );
         })}

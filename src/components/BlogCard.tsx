@@ -9,7 +9,7 @@ const BlogCard = () => {
                       </p>
      </div>
      <div className="basis-3/4  flex flex-col">
-        <h2 className="text-2xl font-bold leading-8 tracking-tight">Exploring module in NestJS</h2>
+        <h2 className="text-2xl font-bold leading-8 tracking-tight dark:text-gray-400">Exploring module in NestJS</h2>
         <div>
             <Tag text={"NextJS"} />
             <Tag text={"NextJS"} />

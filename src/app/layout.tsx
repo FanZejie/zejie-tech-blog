@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import SectionContainer from "@/components/SectionContainer";
+import { ThemeContextProvider } from "@/context/ThemeContext";
+import ThemeProvider from "@/providers/ThemeProvider";
 import LayoutWrapper from "@/components/LayoutWrapper";
 import { RootProvider } from "fumadocs-ui/provider";
 
@@ -20,9 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <LayoutWrapper><RootProvider>{children}</RootProvider></LayoutWrapper>
-          
-        
+      <ThemeContextProvider>
+        <ThemeProvider>
+          <LayoutWrapper>
+            <RootProvider>{children}</RootProvider>
+          </LayoutWrapper>
+        </ThemeProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

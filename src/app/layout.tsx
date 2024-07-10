@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import SectionContainer from "@/components/SectionContainer";
 import LayoutWrapper from "@/components/LayoutWrapper";
+import { RootProvider } from "fumadocs-ui/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        
-          <LayoutWrapper>
-          {children}
-          </LayoutWrapper>
-
+      <LayoutWrapper><RootProvider>{children}</RootProvider></LayoutWrapper>
           
+        
       </body>
     </html>
   );

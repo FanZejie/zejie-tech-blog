@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 import { createPreset } from 'fumadocs-ui/tailwind-plugin';
 
 const config: Config = {
+  darkMode: 'class',
   presets: [createPreset()], // 新增的配置项
   content: [
     './node_modules/fumadocs-ui/dist/**/*.js', // 新增的内容路径

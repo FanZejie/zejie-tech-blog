@@ -3,10 +3,10 @@ import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   return (
-    <header className="supports-backdrop-blur fixed left-0 right-0 top-0 z-40 bg-white/75 py-4 backdrop-blur dark:bg-dark/75">
+    <header className="supports-backdrop-blur fixed left-0 right-0 top-0 z-40 bg-white/75 py-4 backdrop-blur dark:bg-gray-900/75">
       <div className="mx-auto flex max-w-4xl items-center justify-between px-3 xl:max-w-5xl xl:px-0">
         <div>
-          <Link href={"/"} className="text-2xl">
+          <Link href={"/"} className="text-2xl dark:text-gray-100 dark:hover:text-primary-400">
             {"zejie's Tech Blog"}
           </Link>
         </div>

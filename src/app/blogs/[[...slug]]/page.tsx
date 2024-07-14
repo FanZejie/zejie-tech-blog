@@ -9,7 +9,7 @@ export default async function Page({
   params: { slug?: string[] };
 }) {
   const page = getPage(params.slug);
- 
+  console.log("page", page?.data.exports.toc);
   if (page == null) {
     notFound();
   }

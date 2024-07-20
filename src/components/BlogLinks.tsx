@@ -1,7 +1,7 @@
 import Link from "next/link";
 const BlogLinks = () => {
     return (
-        <div className="flex justify-between ">
+        <div className="flex justify-between mt-4 ">
              <div className="flex flex-col space-y-1.5">
         <Link href="/blog" className="hover:underline">
           

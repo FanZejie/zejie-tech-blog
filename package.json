@@ -20,10 +20,11 @@
     "fumadocs-core": "^12.4.2",
     "fumadocs-mdx": "^8.2.33",
     "fumadocs-ui": "^12.4.2",
+    "lucide-react": "^0.411.0",
+    "next": "14.2.4",
     "next-docs-mdx": "7.1.0",
     "next-docs-ui": "7.1.0",
     "next-docs-zeta": "7.1.0",
-    "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18"
   },
